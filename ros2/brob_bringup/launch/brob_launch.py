@@ -7,7 +7,7 @@ from launch_ros.actions import Node
 def generate_launch_description() -> LaunchDescription:
     esp32_ip_arg = DeclareLaunchArgument(
         "esp32_ip",
-        default_value="192.168.0.10",
+        default_value="190.000.0.00",
         description="ESP32 robot controller IP address",
     )
     esp32_port_arg = DeclareLaunchArgument(
