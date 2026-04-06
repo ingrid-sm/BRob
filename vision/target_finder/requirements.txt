@@ -1,0 +1,7 @@
+requests
+Pillow
+torch
+transformers
+safetensors
+scipy
+

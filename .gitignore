@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+
+esp32/brob_control/wifi_secrets.h
+vision/camera_first_test/wifi_secrets.h
+vision/target_finder/local_config.py
+vision/target_finder/output_*.jpg
