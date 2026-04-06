@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>brob_hardware</name>
+  <version>0.0.0</version>
+  <description>ROS 2 bridge nodes for the BRob robot hardware and vision API.</description>
+  <maintainer email="your_email@example.com">Ingrid</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
