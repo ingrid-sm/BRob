@@ -39,11 +39,7 @@ If your camera page is something like `http://YOUR_CAMERA_IP`, then `CAMERA_BASE
 
 ## Python environment
 
-Your existing robot environment already seems to have the needed packages in:
-
-- `/Users/ingrid.sm/Desktop/Projects/robot/.venv`
-
-So the easiest beginner-friendly path is to use that environment.
+Create your own Python environment if you want, then install the packages from `requirements.txt`.
 
 ## How to run
 
@@ -51,9 +47,17 @@ From Terminal:
 
 ```bash
 cd /Users/ingrid.sm/Desktop/Projects/BRob/vision/target_finder
-source /Users/ingrid.sm/Desktop/Projects/robot/.venv/bin/activate
-python run_target_finder.py
+python3 -m pip install -r requirements.txt
+python3 run_target_finder.py
 ```
+
+If you want to use this from ROS, run the API instead:
+
+```bash
+./run_vision_api.sh
+```
+
+That starts the FastAPI server on port `8001`.
 
 Then type a target such as:
 
