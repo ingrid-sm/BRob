@@ -1,28 +1,27 @@
-from glob import glob
 from setuptools import find_packages, setup
 import os
+from glob import glob
 
-
-package_name = "brob_bringup"
-
+package_name = 'brob_bringup'
 
 setup(
     name=package_name,
-    version="0.0.0",
-    packages=find_packages(exclude=["test"]),
+    version='0.0.0',
+    packages=find_packages(exclude=['test']),
     data_files=[
-        ("share/ament_index/resource_index/packages", [f"resource/{package_name}"]),
-        (f"share/{package_name}", ["package.xml"]),
-        (os.path.join("share", package_name, "launch"), glob("launch/*.py")),
+        ('share/ament_index/resource_index/packages',
+            ['resource/' + package_name]),
+        ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name, 'launch'), glob('launch/*.py')),
     ],
-    install_requires=["setuptools"],
+    install_requires=['setuptools'],
     zip_safe=True,
-    maintainer="Ingrid",
-    maintainer_email="your_email@example.com",
-    description="Bringup package for BRob.",
-    license="Apache-2.0",
-    tests_require=["pytest"],
+    maintainer='ingrid',
+    maintainer_email='ingrid@todo.todo',
+    description='Bringup package for BRob',
+    license='Apache-2.0',
+    tests_require=['pytest'],
     entry_points={
-        "console_scripts": [],
+        'console_scripts': [],
     },
 )
