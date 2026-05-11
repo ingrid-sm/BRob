@@ -32,11 +32,11 @@ void handleCommand(String command) {
     turnLeft();
     currentMotion = "left";
     setScreenStatus("LEFT");
-  } else if (command == "right") {
+  } else if (command == "r") {
     turnRight();
     currentMotion = "r";
     setScreenStatus("RIGHT");
-  } else if (command == "stop") {
+  } else if (command == "s") {
     stopMotors();
   } else {
     Serial.println("Unknown command. Try with: f | b | l | r | s");
@@ -51,13 +51,13 @@ void handleCommand(String command) {
     return;
   }
 
-  if (command == "nl") {
+  if (command == "nc") {
     Neck_Request("center");
     setScreenStatus("NECK CENTER");
     return;
   }
 
-  if (command == "nl") {
+  if (command == "nr") {
     Neck_Request("right");
     setScreenStatus("NECK RIGHT");
     return;

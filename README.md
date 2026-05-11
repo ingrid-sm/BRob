@@ -44,17 +44,17 @@ Useful ROS 2 commands
 
 Move the robot:
 
-ros2 topic pub /brob_command std_msgs/msg/String "{data: forward}" --once
-ros2 topic pub /brob_command std_msgs/msg/String "{data: backward}" --once
-ros2 topic pub /brob_command std_msgs/msg/String "{data: left}" --once
-ros2 topic pub /brob_command std_msgs/msg/String "{data: right}" --once
-ros2 topic pub /brob_command std_msgs/msg/String "{data: stop}" --once
+ros2 topic pub /brob_command std_msgs/msg/String "{data: f}" --once
+ros2 topic pub /brob_command std_msgs/msg/String "{data: b}" --once
+ros2 topic pub /brob_command std_msgs/msg/String "{data: l}" --once
+ros2 topic pub /brob_command std_msgs/msg/String "{data: r}" --once
+ros2 topic pub /brob_command std_msgs/msg/String "{data: s}" --once
 
 Move the neck:
 
-ros2 topic pub /brob_command std_msgs/msg/String "{data: neck_left}" --once
-ros2 topic pub /brob_command std_msgs/msg/String "{data: neck_center}" --once
-ros2 topic pub /brob_command std_msgs/msg/String "{data: neck_right}" --once
+ros2 topic pub /brob_command std_msgs/msg/String "{data: nl}" --once
+ros2 topic pub /brob_command std_msgs/msg/String "{data: nc}" --once
+ros2 topic pub /brob_command std_msgs/msg/String "{data: nr}" --once
 
 Vision target:
 
